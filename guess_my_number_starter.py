@@ -1,16 +1,16 @@
 import random
-num = random.randint(1, 99)
-guess = None
+my_code_range = random.randint(1, 99)
+perfect_guess = None
 
 
-while guess != num:
-    guess = input('Guess a number between 1 and 99: ')
-    guess = int(guess)
+while perfect_guess != my_code_range:
+    perfect_guess = input('Guess a number between 1 and 99: ')
+    perfect_guess = int(perfect_guess)
 
-    if guess == 94:
-        print('Congratulations! You won, the number was: 94.')
+    if perfect_guess == 94:
+        print('Congratulations! You won, the number was: 94')
         break
-    elif guess > 94:
+    elif perfect_guess > 94:
         print('Try again, your guess is too high!')
     else:
         print('Try again, your guess is too low!')
